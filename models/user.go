@@ -1,9 +1,11 @@
 package models
 
 import (
+	"time"
+
 	"gorm.io/gorm"
 )
-type UserBasic struct{
+type User struct{
     gorm.Model
 	Name string
 	PassWord string
@@ -12,12 +14,12 @@ type UserBasic struct{
 	Identity string
 	ClientIp string
 	ClientPort string
-	LoginTime uint64
-	HeartbeatTime uint64
-	LogOutTime uint64
+	LoginTime time.Time
+	HeartbeatTime time.Time
+	LoginOutTime time.Time   `gorm:"column:login_out_time" json:"login_out_time"`
 	IsLogOut bool
 	DeviceInfo string
 }
-func (table *UserBasic) TableName() string{
-	return "user_basic"
+func (table *User) TableName() string{
+	return "user"
 }
