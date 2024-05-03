@@ -1,0 +1,219 @@
+
+C:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:72
+[0m[33m[0.718ms] [34;1m[rows:19][0m SELECT * FROM `user` WHERE `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.302ms] [34;1m[rows:-][0m SELECT DATABASE()
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[5.626ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ginchat%' ORDER BY SCHEMA_NAME='ginchat' DESC,SCHEMA_NAME limit 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[1.115ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ginchat' AND table_name = 'user' AND table_type = 'BASE TABLE'
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.505ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ginchat%' ORDER BY SCHEMA_NAME='ginchat' DESC,SCHEMA_NAME limit 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.648ms] [34;1m[rows:-][0m SELECT * FROM `user` LIMIT 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.833ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'ginchat' AND table_name = 'user' ORDER BY ORDINAL_POSITION
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.000ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ginchat%' ORDER BY SCHEMA_NAME='ginchat' DESC,SCHEMA_NAME limit 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[1.017ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ginchat' AND table_name = 'user' AND index_name = 'idx_user_deleted_at'
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:68
+[0m[33m[2.857ms] [34;1m[rows:1][0m INSERT INTO `user` (`created_at`,`updated_at`,`deleted_at`,`name`,`pass_word`,`phone`,`email`,`identity`,`client_ip`,`client_port`,`login_time`,`heartbeat_time`,`login_out_time`,`is_log_out`,`device_info`) VALUES ('2024-05-01 21:56:30.299','2024-05-01 21:56:30.299',NULL,'Jenny','123456','','','','','','2024-05-01 21:56:30.287','2024-05-01 21:56:30.287','2024-05-01 21:56:30.287',false,'')
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[0.855ms] [34;1m[rows:0][0m SELECT * FROM `user` WHERE (`user`.`name` = 'Jenny' AND `user`.`pass_word` = '123456' AND `user`.`login_time` = '2024-05-01 22:34:16.08' AND `user`.`heartbeat_time` = '2024-05-01 22:34:16.08' AND `user`.`login_out_time` = '2024-05-01 22:34:16.08') AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[1.225ms] [34;1m[rows:0][0m SELECT * FROM `user` WHERE (`user`.`name` = 'Jenny' AND `user`.`pass_word` = '123456' AND `user`.`login_time` = '2024-05-01 22:34:41.828' AND `user`.`heartbeat_time` = '2024-05-01 22:34:41.828' AND `user`.`login_out_time` = '2024-05-01 22:34:41.828') AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[1.571ms] [34;1m[rows:1][0m SELECT * FROM `user` WHERE (`user`.`name` = 'Jenny' AND `user`.`pass_word` = '123456') AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:167: [31;1mC:/GinChat/utils/DB.go:90 [35;1mWHERE conditions required
+[0m[33m[0.861ms] [34;1m[rows:0][0m UPDATE `user` SET `deleted_at`='2024-05-01 22:38:34.798' WHERE `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[0.927ms] [34;1m[rows:1][0m SELECT * FROM `user` WHERE (`user`.`name` = 'Jenny' AND `user`.`pass_word` = '123456') AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:167: [31;1mC:/GinChat/utils/DB.go:90 [35;1mWHERE conditions required
+[0m[33m[0.273ms] [34;1m[rows:0][0m UPDATE `user` SET `deleted_at`='2024-05-01 22:38:36.22' WHERE `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[0.613ms] [34;1m[rows:1][0m SELECT * FROM `user` WHERE (`user`.`name` = 'Jenny' AND `user`.`pass_word` = '123456') AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:90
+[0m[33m[5.000ms] [34;1m[rows:1][0m UPDATE `user` SET `deleted_at`='2024-05-01 22:41:42.255' WHERE `user`.`id` = 24 AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[0.757ms] [34;1m[rows:0][0m SELECT * FROM `user` WHERE (`user`.`name` = 'Jenny' AND `user`.`pass_word` = '123456') AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[1.999ms] [34;1m[rows:0][0m SELECT * FROM `user` WHERE (`user`.`name` = 'Jenny' AND `user`.`pass_word` = '123456') AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[0.486ms] [34;1m[rows:0][0m SELECT * FROM `user` WHERE (`user`.`name` = 'Jenny' AND `user`.`pass_word` = '123456') AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[2.790ms] [34;1m[rows:-][0m SELECT DATABASE()
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[1.366ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ginchat%' ORDER BY SCHEMA_NAME='ginchat' DESC,SCHEMA_NAME limit 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.787ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ginchat' AND table_name = 'user' AND table_type = 'BASE TABLE'
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.572ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ginchat%' ORDER BY SCHEMA_NAME='ginchat' DESC,SCHEMA_NAME limit 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT * FROM `user` LIMIT 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[1.158ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'ginchat' AND table_name = 'user' ORDER BY ORDINAL_POSITION
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.563ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ginchat%' ORDER BY SCHEMA_NAME='ginchat' DESC,SCHEMA_NAME limit 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.522ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ginchat' AND table_name = 'user' AND index_name = 'idx_user_deleted_at'
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:68
+[0m[33m[3.919ms] [34;1m[rows:1][0m INSERT INTO `user` (`created_at`,`updated_at`,`deleted_at`,`name`,`pass_word`,`phone`,`email`,`identity`,`client_ip`,`client_port`,`login_time`,`heartbeat_time`,`login_out_time`,`is_log_out`,`device_info`) VALUES ('2024-05-01 22:49:43.299','2024-05-01 22:49:43.299',NULL,'Jenny','123456','','','','','','2024-05-01 22:49:43.29','2024-05-01 22:49:43.29','2024-05-01 22:49:43.29',false,'')
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[1.016ms] [34;1m[rows:1][0m SELECT * FROM `user` WHERE (`user`.`name` = 'Jenny' AND `user`.`pass_word` = '123456') AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:90
+[0m[33m[8.032ms] [34;1m[rows:1][0m DELETE FROM `user` WHERE `user`.`id` = 25
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.804ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ginchat%' ORDER BY SCHEMA_NAME='ginchat' DESC,SCHEMA_NAME limit 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[1.002ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ginchat' AND table_name = 'user' AND table_type = 'BASE TABLE'
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.505ms] [34;1m[rows:-][0m SELECT DATABASE()
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.324ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ginchat%' ORDER BY SCHEMA_NAME='ginchat' DESC,SCHEMA_NAME limit 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT * FROM `user` LIMIT 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.845ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'ginchat' AND table_name = 'user' ORDER BY ORDINAL_POSITION
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.538ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ginchat%' ORDER BY SCHEMA_NAME='ginchat' DESC,SCHEMA_NAME limit 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.594ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ginchat' AND table_name = 'user' AND index_name = 'idx_user_deleted_at'
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:68
+[0m[33m[4.518ms] [34;1m[rows:1][0m INSERT INTO `user` (`created_at`,`updated_at`,`deleted_at`,`name`,`pass_word`,`phone`,`email`,`identity`,`client_ip`,`client_port`,`login_time`,`heartbeat_time`,`login_out_time`,`is_log_out`,`device_info`) VALUES ('2024-05-01 22:55:57.918','2024-05-01 22:55:57.918',NULL,'Xijinping','10086','','','','','','2024-05-01 22:55:57.909','2024-05-01 22:55:57.909','2024-05-01 22:55:57.909',false,'')
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.285ms] [34;1m[rows:-][0m SELECT DATABASE()
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.669ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ginchat%' ORDER BY SCHEMA_NAME='ginchat' DESC,SCHEMA_NAME limit 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[1.032ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ginchat' AND table_name = 'user' AND table_type = 'BASE TABLE'
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.593ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ginchat%' ORDER BY SCHEMA_NAME='ginchat' DESC,SCHEMA_NAME limit 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT * FROM `user` LIMIT 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[1.315ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'ginchat' AND table_name = 'user' ORDER BY ORDINAL_POSITION
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.657ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ginchat%' ORDER BY SCHEMA_NAME='ginchat' DESC,SCHEMA_NAME limit 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.521ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ginchat' AND table_name = 'user' AND index_name = 'idx_user_deleted_at'
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:68
+[0m[33m[2.289ms] [34;1m[rows:1][0m INSERT INTO `user` (`created_at`,`updated_at`,`deleted_at`,`name`,`pass_word`,`phone`,`email`,`identity`,`client_ip`,`client_port`,`login_time`,`heartbeat_time`,`login_out_time`,`is_log_out`,`device_info`) VALUES ('2024-05-01 22:57:53.987','2024-05-01 22:57:53.987',NULL,'Xijinping','110','','','','','','2024-05-01 22:57:53.98','2024-05-01 22:57:53.98','2024-05-01 22:57:53.98',false,'')
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.535ms] [34;1m[rows:-][0m SELECT DATABASE()
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[1.722ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ginchat%' ORDER BY SCHEMA_NAME='ginchat' DESC,SCHEMA_NAME limit 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[1.330ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ginchat' AND table_name = 'user' AND table_type = 'BASE TABLE'
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.774ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ginchat%' ORDER BY SCHEMA_NAME='ginchat' DESC,SCHEMA_NAME limit 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.752ms] [34;1m[rows:-][0m SELECT * FROM `user` LIMIT 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.781ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'ginchat' AND table_name = 'user' ORDER BY ORDINAL_POSITION
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.000ms] [34;1m[rows:-][0m SELECT DATABASE()
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.664ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ginchat%' ORDER BY SCHEMA_NAME='ginchat' DESC,SCHEMA_NAME limit 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.767ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ginchat' AND table_name = 'user' AND index_name = 'idx_user_deleted_at'
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:68
+[0m[33m[3.114ms] [34;1m[rows:1][0m INSERT INTO `user` (`created_at`,`updated_at`,`deleted_at`,`name`,`pass_word`,`phone`,`email`,`identity`,`client_ip`,`client_port`,`login_time`,`heartbeat_time`,`login_out_time`,`is_log_out`,`device_info`) VALUES ('2024-05-01 23:01:22.554','2024-05-01 23:01:22.554',NULL,'Xijinping','110','','','','::1','','2024-05-01 23:01:22.545','2024-05-01 23:01:22.545','2024-05-01 23:01:22.545',false,'')
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[1.371ms] [34;1m[rows:3][0m SELECT * FROM `user` WHERE `user`.`name` = 'Xijinping' AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:90
+[0m[33m[1.139ms] [34;1m[rows:1][0m DELETE FROM `user` WHERE `user`.`id` = 26
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[0.510ms] [34;1m[rows:2][0m SELECT * FROM `user` WHERE `user`.`name` = 'Xijinping' AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:93
+[0m[33m[6.133ms] [34;1m[rows:2][0m DELETE FROM `user` WHERE `user`.`id` IN (27,28)
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[2.725ms] [34;1m[rows:0][0m SELECT * FROM `user` WHERE `user`.`name` = 'Xijinping' AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[1.537ms] [34;1m[rows:6][0m SELECT * FROM `user` WHERE `user`.`name` = 'fransky' AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:167: [31;1mC:/GinChat/utils/DB.go:85 [35;1mError 1146 (42S02): Table 'ginchat.user_info' doesn't exist
+[0m[33m[1.112ms] [34;1m[rows:0][0m SELECT * FROM `user_info` WHERE `user_info`.`name` = 'fransky' AND `user_info`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:167: [31;1mC:/GinChat/utils/DB.go:85 [35;1mError 1146 (42S02): Table 'ginchat.user_info' doesn't exist
+[0m[33m[2.006ms] [34;1m[rows:0][0m SELECT * FROM `user_info` WHERE `user_info`.`name` = 'fransky' AND `user_info`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:167: [31;1mC:/GinChat/utils/DB.go:85 [35;1mError 1146 (42S02): Table 'ginchat.user_info' doesn't exist
+[0m[33m[1.465ms] [34;1m[rows:0][0m SELECT * FROM `user_info` WHERE `user_info`.`name` = 'fransky' AND `user_info`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:167: [31;1mC:/GinChat/utils/DB.go:85 [35;1mError 1146 (42S02): Table 'ginchat.user_info' doesn't exist
+[0m[33m[0.412ms] [34;1m[rows:0][0m SELECT * FROM `user_info` WHERE `user_info`.`name` = 'fransky' AND `user_info`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:167: [31;1mC:/GinChat/utils/DB.go:85 [35;1mError 1146 (42S02): Table 'ginchat.user_info' doesn't exist
+[0m[33m[0.297ms] [34;1m[rows:0][0m SELECT * FROM `user_info` WHERE `user_info`.`name` = 'fransky' AND `user_info`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[1.803ms] [34;1m[rows:6][0m SELECT * FROM `user` WHERE `user`.`name` = 'fransky' AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[1.151ms] [34;1m[rows:6][0m SELECT * FROM `user` WHERE `user`.`name` = 'fransky' AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[1.059ms] [34;1m[rows:6][0m SELECT * FROM `user` WHERE `user`.`name` = 'fransky' AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[0.897ms] [34;1m[rows:6][0m SELECT * FROM `user` WHERE `user`.`name` = 'fransky' AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[2.233ms] [34;1m[rows:6][0m SELECT * FROM `user` WHERE `user`.`name` = 'fransky' AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[1.224ms] [34;1m[rows:6][0m SELECT * FROM `user` WHERE `user`.`name` = 'fransky' AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[1.180ms] [34;1m[rows:6][0m SELECT * FROM `user` WHERE `user`.`name` = 'fransky' AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[7.590ms] [34;1m[rows:6][0m SELECT * FROM `user` WHERE `user`.`name` = 'fransky' AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[1.556ms] [34;1m[rows:6][0m SELECT * FROM `user` WHERE `user`.`name` = 'fransky' AND `user`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.405ms] [34;1m[rows:-][0m SELECT DATABASE()
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[4.086ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ginchat%' ORDER BY SCHEMA_NAME='ginchat' DESC,SCHEMA_NAME limit 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[2.754ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ginchat' AND table_name = 'user' AND table_type = 'BASE TABLE'
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.180ms] [34;1m[rows:-][0m SELECT DATABASE()
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.727ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ginchat%' ORDER BY SCHEMA_NAME='ginchat' DESC,SCHEMA_NAME limit 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.745ms] [34;1m[rows:-][0m SELECT * FROM `user` LIMIT 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[1.200ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'ginchat' AND table_name = 'user' ORDER BY ORDINAL_POSITION
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[19.293ms] [34;1m[rows:0][0m ALTER TABLE `user` ADD `salt` longtext
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[4.448ms] [34;1m[rows:-][0m SELECT DATABASE()
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[1.756ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ginchat%' ORDER BY SCHEMA_NAME='ginchat' DESC,SCHEMA_NAME limit 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[1.406ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ginchat' AND table_name = 'user' AND index_name = 'idx_user_deleted_at'
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:68
+[0m[33m[6.513ms] [34;1m[rows:1][0m INSERT INTO `user` (`created_at`,`updated_at`,`deleted_at`,`name`,`pass_word`,`salt`,`phone`,`email`,`identity`,`client_ip`,`client_port`,`login_time`,`heartbeat_time`,`login_out_time`,`is_log_out`,`device_info`) VALUES ('2024-05-03 15:52:21.21','2024-05-03 15:52:21.21',NULL,'fransky','2bbc833eccba85cccf069bc329b3e019','1376932942','','','','::1','','2024-05-03 15:52:21.17','2024-05-03 15:52:21.17','2024-05-03 15:52:21.17',false,'')
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[0.518ms] [34;1m[rows:-][0m SELECT DATABASE()
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[1.828ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ginchat%' ORDER BY SCHEMA_NAME='ginchat' DESC,SCHEMA_NAME limit 1
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:180: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[1.033ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ginchat' AND table_name = 'user_info' AND table_type = 'BASE TABLE'
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:67
+[0m[33m[38.340ms] [34;1m[rows:0][0m CREATE TABLE `user_info` (`id` bigint unsigned AUTO_INCREMENT,`created_at` datetime(3) NULL,`updated_at` datetime(3) NULL,`deleted_at` datetime(3) NULL,`name` longtext,`pass_word` longtext,`salt` longtext,`phone` longtext,`email` longtext,`identity` longtext,`client_ip` longtext,`client_port` longtext,`login_time` datetime(3) NULL,`heartbeat_time` datetime(3) NULL,`login_out_time` datetime(3) NULL,`is_log_out` boolean,`device_info` longtext,PRIMARY KEY (`id`),INDEX `idx_user_info_deleted_at` (`deleted_at`))
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:68
+[0m[33m[3.116ms] [34;1m[rows:1][0m INSERT INTO `user_info` (`created_at`,`updated_at`,`deleted_at`,`name`,`pass_word`,`salt`,`phone`,`email`,`identity`,`client_ip`,`client_port`,`login_time`,`heartbeat_time`,`login_out_time`,`is_log_out`,`device_info`) VALUES ('2024-05-03 15:53:35.598','2024-05-03 15:53:35.598',NULL,'fransky','880f75b725897c6308848053f4df8da4','577322284','','','','::1','','2024-05-03 15:53:35.552','2024-05-03 15:53:35.552','2024-05-03 15:53:35.552',false,'')
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[1.147ms] [34;1m[rows:1][0m SELECT * FROM `user_info` WHERE `user_info`.`name` = 'fransky' AND `user_info`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[1.063ms] [34;1m[rows:1][0m SELECT * FROM `user_info` WHERE `user_info`.`name` = 'fransky' AND `user_info`.`deleted_at` IS NULL
+INFOC:/Users/CRISPR/go/pkg/mod/gorm.io/gorm@v1.25.10/logger/logger.go:182: [32mC:/GinChat/utils/DB.go:85
+[0m[33m[1.645ms] [34;1m[rows:1][0m SELECT * FROM `user_info` WHERE `user_info`.`name` = 'fransky' AND `user_info`.`deleted_at` IS NULL

@@ -1,0 +1,94 @@
+info:
+  contact: {}
+paths:
+  /index:
+    get:
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      tags:
+      - 首页
+  /user/CreateUser:
+    post:
+      parameters:
+      - description: username
+        in: query
+        name: name
+        type: string
+      - description: userpasswd
+        in: query
+        name: password
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 新增用户
+      tags:
+      - 首页
+  /user/DeleteUser:
+    post:
+      parameters:
+      - description: username
+        in: query
+        name: name
+        type: string
+      - description: userpasswd
+        in: query
+        name: password
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 删除用户
+      tags:
+      - 首页
+  /user/GetUserList:
+    get:
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      tags:
+      - 首页
+  /user/QueryUsers:
+    get:
+      parameters:
+      - description: username
+        in: query
+        name: name
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 通过用户名查询用户
+      tags:
+      - 首页
+  /user/QueryUsersWithPasswd:
+    get:
+      parameters:
+      - description: username
+        in: query
+        name: name
+        type: string
+      - description: userpasswd
+        in: query
+        name: password
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 通过用户名和密码查询用户
+      tags:
+      - 首页
+swagger: "2.0"

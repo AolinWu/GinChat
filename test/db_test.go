@@ -7,6 +7,7 @@ import (
 	"ginchat/utils"
 	"testing"
 	"time"
+	"gorm.io/gorm"
 )
 var db *utils.DB=nil
 func init(){
@@ -45,5 +46,40 @@ func TestInsert(t *testing.T){
 	}
 }
 func TestTransaction(t *testing.T){
-     
+	 original_length:=db.UserCount()
+     var op utils.TransactionOperation=func(db *utils.DB, tx *gorm.DB) error {
+		user:=&models.User{
+			Name:"wuaolin",
+		   PassWord: "123",
+		   Phone: "17770261951",
+		   Email: "2015400697@qq.com",
+		   LoginTime: time.Now(),
+		   LoginOutTime: time.Now().Add(time.Hour*3),
+		   HeartbeatTime: time.Now(),
+	   }
+	   tx.AutoMigrate(&models.User{})
+	   tx.Create(user)
+	   panic("Error happened")
+	   return nil
+	 }
+	 defer func(){
+		new_len:=db.UserCount()
+        if r:=recover();r!=nil{
+			if new_len!=original_length{
+				t.Errorf("transaction rolback failed")
+			}else{
+				log.Info("transaction rollback")
+			}
+		}else{
+			if new_len==original_length{
+               t.Errorf("insert failed")
+			}else{
+				log.Info("transaction success")
+			}
+		}
+	 }()
+	 db.BeginTransaction(op)
+	 
+		 
 }
+

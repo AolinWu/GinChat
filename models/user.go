@@ -2,24 +2,44 @@ package models
 
 import (
 	"time"
-
 	"gorm.io/gorm"
 )
 type User struct{
     gorm.Model
-	Name string
-	PassWord string
-	Phone string
-	Email string
-	Identity string
-	ClientIp string
-	ClientPort string
-	LoginTime time.Time
-	HeartbeatTime time.Time
-	LoginOutTime time.Time   `gorm:"column:login_out_time" json:"login_out_time"`
-	IsLogOut bool
-	DeviceInfo string
+	Name string `json:"name"`
+	PassWord string `json:"password"`
+	Salt string `json:"salt"`
+	Phone string `json:"phone"`
+	Email string `json:"email"`
+	Identity string `json:"identity"`
+	ClientIp string `json:"clientip"`
+	ClientPort string `json:"clientport"`
+	LoginTime time.Time `json:"logintime"`
+	HeartbeatTime time.Time `json:"heartbeattime"`
+	LoginOutTime time.Time   `gorm:"column:login_out_time" json:"loginouttime"`
+	IsLogOut bool `json:"islogout"`
+	DeviceInfo string `json:"deviceinfo"`
+}
+func NewUserWithCurrentTime(name string,password string,salt string) *User{
+     return &User{
+		Name:name,
+		PassWord:password,
+		Salt: salt,
+        LoginTime:time.Now(),
+		HeartbeatTime: time.Now(),
+		LoginOutTime: time.Now(),
+	 }
+}
+func NewUser() *User{
+	return &User{}
+}
+func NewUserWithoutTime(name string,password string) *User{
+	return &User{
+		Name:name,
+		PassWord:password,
+	 }
 }
 func (table *User) TableName() string{
-	return "user"
+	return "user_info"
 }
+
